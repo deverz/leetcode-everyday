@@ -21,6 +21,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// 第一种方法：直接遍历进行链表反转，简单易懂
 func reverseList(head *ListNode) *ListNode {
 	var prev *ListNode
 	curr := head
@@ -33,7 +34,7 @@ func reverseList(head *ListNode) *ListNode {
 	return prev
 }
 
-// 递归
+// 第二种方法，使用递归，比较难理解
 func reverseList2(head *ListNode) *ListNode {
 	// 递归只考虑一个节点的问题就行，别想那么多
 	// 比如 1 2 3
