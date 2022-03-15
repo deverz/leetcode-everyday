@@ -8,6 +8,19 @@
 输出: 5->4->3->2->1->NULL
 ```
 
+```
+遍历反转解题思路：
+
+遍历反转 1 2 3 4 5 nil
+从head为1开始进行遍历：
+1、定义一个prev变量保存当前节点前一个节点信息，prev=nil
+2、定义curr变量表示当前节点开始进行遍历，curr=1
+3、定义next保存当前节点的下一个节点信息，next=2
+4、将当前节点的下一个节点信息置为prev变量，curr.Next=nil
+5、将当前节点curr赋给prev变量，在下一轮遍历时使用，prev=1，下次遍历curr=2时会赋给curr.Next
+6、将低3步保存的next变量赋给curr变量，进行下一轮遍历，curr=2
+```
+
 ```go
 /**
  * Definition for singly-linked list.
