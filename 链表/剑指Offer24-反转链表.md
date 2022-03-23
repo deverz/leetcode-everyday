@@ -18,7 +18,7 @@
 3、定义next保存当前节点的下一个节点信息，next=2
 4、将当前节点的下一个节点信息置为prev变量，curr.Next=nil
 5、将当前节点curr赋给prev变量，在下一轮遍历时使用，prev=1，下次遍历curr=2时会赋给curr.Next
-6、将低3步保存的next变量赋给curr变量，进行下一轮遍历，curr=2
+6、将第3步保存的next变量赋给curr变量，进行下一轮遍历，curr=2
 ```
 
 ```go
